@@ -1,0 +1,25 @@
+To Read All Records, Use Method Get
+http://server_name/person/read.php
+
+To Create New Record, Send With POST Data
+http://server_name/person/create.php
+Like This
+$_POST['person_id'] = 'person_id';
+$_POST['name'] = 'name';
+$_POST['gender'] = 'gender';
+// Optional but should be included
+$_POST['parent_id'] = 'parent_id';
+
+To Update Certain Record, Send With POST Data
+http://server_name/person/update.php
+Like This
+$_POST['person_id'] = 'person_id';
+$_POST['name'] = 'name';
+$_POST['gender'] = 'gender';
+// Optional but should be included
+$_POST['parent_id'] = 'parent_id';
+
+To Delete Certain Record, Send With POST Data
+http://server_name/person/delete.php
+Like This
+$_POST['person_id'] = 'person_id';
